@@ -435,6 +435,10 @@ nav {
   gap: 3rem 2rem;
 }
 
+.logos__img {
+  text-align: center;
+}
+
 .logos__img img {
   height: 60px;
   opacity: .2;
@@ -442,7 +446,7 @@ nav {
 }
 
 .logos__img img:hover {
-  opacity: .6;
+  opacity: .8;
 }
 
 /*=============== POPULAR ===============*/
@@ -541,7 +545,7 @@ nav {
   border-radius: 135px 135px 16px 16px;
 }
 
-value__img {
+.value__img {
   position: absolute;
   width: 250px;
   height: 300px;
