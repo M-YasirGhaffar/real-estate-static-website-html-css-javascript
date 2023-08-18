@@ -456,7 +456,7 @@ nav {
 
 .popular__card {
   width: 290px;
-  background-color: var(--container-color);
+  /* background-color: var(--container-color); */
   padding: .5rem .5rem 1.5rem;
   border-radius: 1rem;
   margin: 0 auto;
@@ -752,7 +752,7 @@ nav {
 }
 
 .subscribe__description {
-  color: hsl((228), 90%, 92%);
+  color: var(--text-color-light);
   font-size: var(--small-font-size);
   margin-bottom: 2rem;
 }
