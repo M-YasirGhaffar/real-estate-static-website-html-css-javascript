@@ -9,7 +9,7 @@
 
   /*========== Colors ==========*/
   /*Color mode HSL(hue, saturation, lightness)*/
-  --first-color: hsl(228, 66%, 53%);
+  /* --first-color: hsl(228, 66%, 53%);
   --first-color-alt: hsl(228, 66%, 47%);
   --first-color-light: hsl(228, 62%, 59%);
   --first-color-lighten: hsl(228, 100%, 97%);
@@ -19,7 +19,19 @@
   --text-color-light: hsl(228, 12%, 75%);
   --border-color: hsl(228, 99%, 98%);
   --body-color: #fff;
-  --container-color: #fff;
+  --container-color: #fff; */
+
+  --first-color: hsl(30, 70%, 60%);
+  --first-color-alt: hsl(30, 70%, 45%);
+  --first-color-light: hsl(30, 60%, 55%);
+  --first-color-lighten: hsl(30, 90%, 95%);
+  --second-color: hsl(40, 60%, 70%);
+  --title-color: hsl(30, 20%, 20%);
+  --text-color: hsl(30, 20%, 50%);
+  --text-color-light: hsl(30, 70%, 65%);
+  --border-color: hsl(30, 30%, 90%);
+  --body-color: hsl(30, 20%, 95%);
+  --container-color: hsl(30, 20%, 92%);
 
   /*========== Font and typography ==========*/
   /*.5rem = 8px | 1rem = 16px ...*/
@@ -114,28 +126,38 @@ button {
 
 /*========== Variables Dark theme ==========*/
 body.dark-theme {
-  --first-color: hsl(228, 66%, 62%);
   /* --first-color-alt: hsl(228, 66%, 47%); */
   /* --first-color-light: hsl(228, 62%, 59%); */
   /* --first-color-lighten: hsl(228, 100%, 97%); */
+  /* --text-color-light: hsl(228, 12%, 75%); */
+  /* --first-color: hsl(228, 66%, 62%);
   --second-color: hsl(25, 57%, 54%);
   --title-color: hsl(228, 8%, 95%);
   --text-color: hsl(228, 8%, 70%);
-  /* --text-color-light: hsl(228, 12%, 75%); */
   --border-color: hsl(228, 16%, 14%);
   --body-color: hsl(228, 12%, 8%);
-  --container-color: hsl(228, 16%, 12%);
+  --container-color: hsl(228, 16%, 12%); */
+
+  --first-color: hsl(30, 70%, 62%);
+  --second-color: hsl(25, 57%, 54%);
+  --title-color: hsl(30, 8%, 95%);
+  --text-color: hsl(30, 8%, 70%);
+  --border-color: hsl(30, 16%, 14%);
+  --body-color: hsl(30, 12%, 8%);
+  --container-color: hsl(30, 16%, 12%);
+
 }
 
 /*========== 
     Color changes in some parts of 
     the website, in dark theme 
 ==========*/
-.dark-theme .home__search,
+
+/* .dark-theme .home__search,
 .dark-theme .swiper-button-next,
 .swiper-button-prev {
   border: 3px solid var(--border-color);
-}
+} */
 
 .dark-theme .nav__menu,
 .dark-theme .home__img,
@@ -303,7 +325,7 @@ nav {
 
 /* Active link */
 .active-link {
-  background: linear-gradient(101deg, hsl(228, 66%, 53%), hsl(228, 66%, 47%));
+  background: linear-gradient(101deg, hsl(30, 70%, 53%), hsl(30, 70%, 47%));
   color: #fff;
   box-shadow: 0 4px 8px hsla(228, 66%, 45%, .25);
 }
@@ -409,7 +431,7 @@ nav {
 /*=============== BUTTON ===============*/
 .button {
   display: inline-block;
-  background: linear-gradient(101deg, hsl(228, 66%, 53%), hsl(228, 68%, 47%));
+  background: linear-gradient(101deg, hsl(30, 70%, 53%), hsl(30, 70%, 47%));
   color: #fff;
   padding: 14px;
   border-radius: 0.5rem;
@@ -424,13 +446,13 @@ nav {
   box-shadow: 0 4px 12px hsla(228, 66%, 25%, .25);
 }
 
-.nav__button {
+/* .nav__button {
   display: none;
-}
+} */
 
 /*=============== LOGOS ===============*/
 .logos__container {
-  padding-top: 2rem;
+  /* padding-top: 2rem; */
   grid-template-columns: repeat(2, 1fr);
   gap: 3rem 2rem;
 }
@@ -455,17 +477,22 @@ nav {
 }
 
 .popular__card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
   width: 290px;
-  /* background-color: var(--container-color); */
-  padding: .5rem .5rem 1.5rem;
+  padding: 1.5rem 0.5rem;
   border-radius: 1rem;
   margin: 0 auto;
-  transition: .4s;
+  transition: 0.4s;
+  /* background-color: var(--container-color); */
 }
 
 .popular__img {
   border-radius: 1rem;
   margin-bottom: 1rem;
+  max-height: 60vh;
 }
 
 .popular__data {
@@ -476,18 +503,24 @@ nav {
   font-size: var(--h2-font-size);
   color: var(--text-color);
   margin-bottom: 0.25rem;
+  /* text-align: center; */
+
 }
 
 .popular__price span {
   color: var(--second-color);
+  
 }
 
 .popular__title {
   font-size: var(--h3-font-size);
   margin-bottom: 0.75rem;
+  /* text-align: center; */
+
 }
 
 .popular__description {
+  /* text-align: center; */
   font-size: var(--small-font-size);
 }
 
@@ -541,7 +574,7 @@ nav {
 .value__orbe {
   width: 266px;
   height: 316px;
-  background-color: hsl((228), 24%, 97%);
+  background: linear-gradient(180deg, hsl(0, 0%, 16%) 93%, hsl(0, 0%, 67%) 100%);
   border-radius: 135px 135px 16px 16px;
 }
 
@@ -616,13 +649,13 @@ nav {
 .value__accordion-content {
   overflow: hidden;
   height: 0;
-  transition: all 0.25 ease;
+  transition: all 0.3s ease;
 }
 
 /*Rotate icon and add shadows*/
 .accordion-open {
   box-shadow: 0 12px 32px hsla(228, 66%, 45%, .1);
-  transition: .4s ease;
+  transition: .4s;
 }
 
 .accordion-open .value__accordion-icon {
@@ -634,6 +667,7 @@ nav {
 }
 
 .accordion-open .value__accordion-arrow i {
+  transition: 0.3s;
   transition: rotate(-180deg);
 }
 
@@ -652,7 +686,7 @@ nav {
 .contact__orbe {
   width: 266px;
   height: 316px;
-  background-color: hsl((228), 24%, 97%);
+  background: linear-gradient(180deg, hsl(0, 0%, 16%) 93%, hsl(0, 0%, 67%) 100%);
   border-radius: 135px 135px 16px 16px;
 }
 
@@ -661,7 +695,7 @@ nav {
   width: 250px;
   height: 300px;
   overflow: hidden;
-  border-radius: 125px 15px 12px 12px;
+  border-radius: 125px 125px 12px 12px;
   inset: 0;
   margin: auto;
   box-shadow: 0 16px 32px hsla(228, 66%, 25%, .25);
@@ -718,6 +752,7 @@ nav {
   color: var(--first-color);
   font-weight: var(--font-semi-bold);
   box-shadow: none;
+  transition: all .4s ease;
 }
 
 .contact__card-button:hover {
@@ -752,7 +787,7 @@ nav {
 }
 
 .subscribe__description {
-  color: var(--text-color-light);
+  color: var(--text-color);
   font-size: var(--small-font-size);
   margin-bottom: 2rem;
 }
@@ -829,7 +864,7 @@ nav {
 }
 
 .social {
-  margin: 3rem;
+  margin: 2rem;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -990,7 +1025,7 @@ nav {
   }
 
   .footer__content {
-    gap: 2.5rem;
+    gap: 1rem;
   }
 }
 
@@ -1030,6 +1065,7 @@ nav {
   }
 
   .logos__container {
+    padding-top: 1rem;
     grid-template-columns: repeat(4, max-content);
     justify-content: center;
   }
@@ -1094,9 +1130,9 @@ nav {
     display: none;
   }
 
-  .nav__button {
+  /* .nav__button {
     display: inline-block;
-  }
+  } */
 
   .active-link {
     background: none;
@@ -1162,9 +1198,9 @@ nav {
     height: 100px;
   }
 
-  .popular__container {
+  /* .popular__container {
     padding-top: 3rem;
-  }
+  } */
 
   .popular__card {
     width: 320px;

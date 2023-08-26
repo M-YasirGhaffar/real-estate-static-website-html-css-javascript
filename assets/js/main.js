@@ -33,6 +33,17 @@ const toggleItem = (item) => {
         accordionContent.style.height = accordionContent.scrollHeight + 'px'
         item.classList.add('accordion-open');
     }
+
+
+    // /* Inside toggleItem function */
+    // if (item.classList.contains('accordion-open')) {
+    //     accordionContent.style.maxHeight = '0';
+    //     item.classList.remove('accordion-open');
+    // } else {
+    //     accordionContent.style.maxHeight = accordionContent.scrollHeight + 'px';
+    //     item.classList.add('accordion-open');
+    // }
+
 }
 
 const accordionItems = document.querySelectorAll('.value__accordion-item')
@@ -45,8 +56,25 @@ accordionItems.forEach((item) => {
         if (openItem && openItem !==item) {
             toggleItem(openItem);
         }
+
+        // /* Inside accordionHeader.addEventListener */
+        // const arrowIcon = accordionHeader.querySelector('.value__accordion-arrow i');
+        // if (item.classList.contains('accordion-open')) {
+        //     arrowIcon.style.transform = 'rotate(180deg)';
+        // } else {
+        //     arrowIcon.style.transform = 'rotate(0deg)';
+        // }
+
     });
 });
+
+
+
+
+
+
+
+
 
 /*=============== SCROLL SECTIONS ACTIVE LINK ===============*/
 const sections = document.querySelectorAll('section[id]');
