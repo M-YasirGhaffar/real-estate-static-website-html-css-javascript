@@ -82,7 +82,7 @@ body {
   font-size: var(--normal-font-size);
   background-color: var(--body-color);
   color: var(--text-color);
-  transition: .3s;
+  transition: 3s;
 }
 
 h1,
@@ -338,6 +338,7 @@ nav {
 
 .home__container {
   padding-top: 4rem;
+  padding-bottom: 4rem;
   row-gap: 3.5rem;
 }
 
@@ -407,6 +408,7 @@ nav {
   position: relative;
   display: flex;
   justify-content: center;
+  bottom: -2rem;
 }
 
 .home__orbe {
