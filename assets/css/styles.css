@@ -1,25 +1,9 @@
 /*=============== GOOGLE FONTS ===============*/
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap");
 
-/* @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap'); */
-
 /*=============== VARIABLES CSS ===============*/
 :root {
   --header-height: 3.5rem;
-
-  /*========== Colors ==========*/
-  /*Color mode HSL(hue, saturation, lightness)*/
-  /* --first-color: hsl(228, 66%, 53%);
-  --first-color-alt: hsl(228, 66%, 47%);
-  --first-color-light: hsl(228, 62%, 59%);
-  --first-color-lighten: hsl(228, 100%, 97%);
-  --second-color: hsl(25, 83%, 53%);
-  --title-color: hsl(228, 57%, 28%);
-  --text-color: hsl(228, 15%, 50%);
-  --text-color-light: hsl(228, 12%, 75%);
-  --border-color: hsl(228, 99%, 98%);
-  --body-color: #fff;
-  --container-color: #fff; */
 
   --first-color: hsl(30, 70%, 60%);
   --first-color-alt: hsl(30, 70%, 45%);
@@ -126,17 +110,6 @@ button {
 
 /*========== Variables Dark theme ==========*/
 body.dark-theme {
-  /* --first-color-alt: hsl(228, 66%, 47%); */
-  /* --first-color-light: hsl(228, 62%, 59%); */
-  /* --first-color-lighten: hsl(228, 100%, 97%); */
-  /* --text-color-light: hsl(228, 12%, 75%); */
-  /* --first-color: hsl(228, 66%, 62%);
-  --second-color: hsl(25, 57%, 54%);
-  --title-color: hsl(228, 8%, 95%);
-  --text-color: hsl(228, 8%, 70%);
-  --border-color: hsl(228, 16%, 14%);
-  --body-color: hsl(228, 12%, 8%);
-  --container-color: hsl(228, 16%, 12%); */
 
   --first-color: hsl(30, 70%, 62%);
   --second-color: hsl(25, 57%, 54%);
@@ -234,7 +207,6 @@ body.dark-theme {
 
 .main {
   overflow: hidden;
-  /* For the animations ScrollReveal*/
 }
 
 /*=============== HEADER & NAV ===============*/
@@ -408,7 +380,7 @@ nav {
   position: relative;
   display: flex;
   justify-content: center;
-  bottom: -2rem;
+  bottom: -4rem;
 }
 
 .home__orbe {
@@ -654,7 +626,6 @@ nav {
   transition: all 0.3s ease;
 }
 
-/*Rotate icon and add shadows*/
 .accordion-open {
   box-shadow: 0 12px 32px hsla(228, 66%, 45%, .1);
   transition: .4s;
@@ -672,7 +643,6 @@ nav {
   transition: 0.3s;
   transition: rotate(-180deg);
 }
-
 
 /*=============== CONTACT ===============*/
 .contact__container {
@@ -766,9 +736,6 @@ nav {
   box-shadow: 0 8px 24px hsla(228, 66%, 45%, .1);
 }
 
-
-
-
 /*=============== SUBSCRIBE ===============*/
 .subscribe {
   padding: 2.5rem 0;
@@ -789,7 +756,7 @@ nav {
 }
 
 .subscribe__description {
-  color: var(--text-color);
+  color: var(--first-color-lighten);
   font-size: var(--small-font-size);
   margin-bottom: 2rem;
 }
@@ -822,13 +789,6 @@ nav {
 .footer__logo i {
   font-size: 4rem;
 }
-
-/* .links__intro {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-} */
 
 .footer__description,
 .footer__link {
@@ -1132,10 +1092,6 @@ nav {
     display: none;
   }
 
-  /* .nav__button {
-    display: inline-block;
-  } */
-
   .active-link {
     background: none;
     box-shadow: none;
@@ -1199,10 +1155,6 @@ nav {
   .logos__img {
     height: 100px;
   }
-
-  /* .popular__container {
-    padding-top: 3rem;
-  } */
 
   .popular__card {
     width: 320px;
@@ -1310,7 +1262,6 @@ nav {
   }
 
 }
-
 
 @media screen and (min-width: 1040px) {
   .container {
